@@ -5,6 +5,7 @@ from rest_framework.response import Response
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
 
+# If the request version is 2, return AlunoSerializer2, otherwise return AlunoSerializer
 class AlunosViewSet(viewsets.ModelViewSet):
     """Exibindo todos os alunos"""
     queryset = Aluno.objects.all()

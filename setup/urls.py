@@ -5,6 +5,7 @@ from rest_framework import routers
 from django.conf import settings
 from django.conf.urls.static import static
 
+# Creating a router that will be used to generate the URLs for the API.
 router = routers.DefaultRouter()
 router.register('alunos', AlunosViewSet, basename='Alunos')
 router.register('cursos', CursosViewSet, basename='Cursos')
